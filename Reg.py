@@ -81,7 +81,7 @@ class KingMexawChecker():
         self.banned+=1
     def checker_14_days(self):
         while 1:
-            user = str(self.q.get)
+            user = str(self.q.get())
             try:
                 r = requests.Session()
                 my_own = uuid.uuid1()
